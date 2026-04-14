@@ -15,7 +15,7 @@ if __name__ == '__main__':
     GLADOS_COOKIE = os.environ.get("GLADOS_COOKIE", "")
 
     # 本地测试可手动填写
-    # GLADOS_COOKIE = ""
+    GLADOS_COOKIE = "koa:sess=eyJ1c2VySWQiOjUxMjUzOCwiX2V4cGlyZSI6MTgwMjA3Mjg0MTIzMiwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=iUT_KbOFWJ5K4Pv-OyHEiIUfrbQ"
     WECOM_WEBHOOK = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=db38e208-e2b2-4307-85e7-2a66f8b2f946"
 
     if not GLADOS_COOKIE:
