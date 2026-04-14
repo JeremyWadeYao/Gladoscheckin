@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     # 本地测试可手动填写
     # GLADOS_COOKIE = ""
-    # WECOM_WEBHOOK = ""
+    WECOM_WEBHOOK = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=db38e208-e2b2-4307-85e7-2a66f8b2f946"
 
     if not GLADOS_COOKIE:
         print("未获取到 GLADOS_COOKIE")
