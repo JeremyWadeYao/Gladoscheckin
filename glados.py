@@ -22,13 +22,13 @@ if __name__ == '__main__':
         print("未获取到 GLADOS_COOKIE")
         sys.exit(0)
 
-    checkin_url = "https://glados.rocks/api/user/checkin"
-    status_url = "https://glados.rocks/api/user/status"
+    checkin_url = "https://glados.cloud/api/user/checkin"
+    status_url = "https://glados.cloud/api/user/status"
 
     headers = {
         "cookie": GLADOS_COOKIE,
-        "referer": "https://glados.rocks/console/checkin",
-        "origin": "https://glados.rocks",
+        "referer": "https://glados.cloud/console/checkin",
+        "origin": "https://glados.cloud",
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
         "content-type": "application/json;charset=UTF-8"
     }
