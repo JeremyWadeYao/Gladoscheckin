@@ -53,7 +53,7 @@ if __name__ == '__main__':
         left_days = float(data.get("leftDays", 0))
         
         # ========== 修复：读取真实积分 Points ==========
-        balance = float(data.get("points", 0))
+        balance = float(data.get("point", 0))
 
         # 签到信息
         msg = checkin_json.get("message", "")
