@@ -28,4 +28,5 @@ jobs:
         env: 
           GLADOS_COOKIE: "${{ secrets.GLADOS_COOKIE }}"
           WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
+          ACTIONS_STEP_DEBUG: true
    #   - uses: gautamkrishnar/keepalive-workflow@master  
