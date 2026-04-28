@@ -79,6 +79,7 @@ def main():
 
         data = status_json.get("data", {})
 
+        print("所有字段:", list(data.keys()))  # 这行会打印所有字段名
         # 强校验
         email = data.get("email")
         if not email:
