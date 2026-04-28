@@ -73,7 +73,7 @@ if __name__ == '__main__':
 
     # -------------------- 正常数据 --------------------
     try:
-        left_days = state_json["data"]["leftDays"]
+        left_days = float(state_json["data"]["leftDays"])
         email = state_json["data"]["email"]
         balance = float(state_json["data"]["balance"])
     except KeyError:
