@@ -1,6 +1,7 @@
 import requests
 import os
 import sys
+from datetime import datetime
 
 # -------------------------------------------------------------------------------------------
 # GLADOS 自动签到 - 企业微信机器人版
@@ -24,6 +25,7 @@ if __name__ == '__main__':
 
     checkin_url = "https://glados.cloud/api/user/checkin"
     status_url = "https://glados.cloud/api/user/status"
+    exchange_url = "https://glados.cloud/api/user/exchange"
 
     headers = {
         "cookie": GLADOS_COOKIE,
@@ -71,7 +73,7 @@ if __name__ == '__main__':
 
     # -------------------- 正常数据 --------------------
     try:
-        left_days = state_json["data"]["leftDays"].split('.')[0]
+        left_days = state_json["data"]["leftDays"]
         email = state_json["data"]["email"]
         balance = float(state_json["data"]["balance"])
     except KeyError:
