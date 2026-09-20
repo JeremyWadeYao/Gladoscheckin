@@ -26,7 +26,8 @@ jobs:
         run: |
           python3 glados.py
         env: 
-          GLADOS_COOKIE: "${{ secrets.GLADOS_COOKIE }}"
-          WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
+          GLADOS_COOKIE: ${{ secrets.GLADOS_COOKIE }}
+          SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
+          # WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
           ACTIONS_STEP_DEBUG: true
    #   - uses: gautamkrishnar/keepalive-workflow@master  
